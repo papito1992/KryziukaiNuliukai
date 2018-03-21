@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="KryziukaiNuliukai:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/KryziukaiNuliukai_jar</output-path>
+    <root id="archive" name="KryziukaiNuliukai.jar">
+      <element id="module-output" name="KryziukaiNuliukai" />
+    </root>
+  </artifact>
+</component>

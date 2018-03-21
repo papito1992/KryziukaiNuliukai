@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Controller">
+    <center>
+        <GridPane alignment="CENTER" hgap="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                  minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0"
+                  style="-fx-background-color: silver; -fx-border-width: 4; -fx-border-color: black;" vgap="2.0"
+                  BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <children>
+                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.rowIndex="1">
+                    <children>
+                        <Button fx:id="btn1" layoutX="1.0" mnemonicParsing="false" onAction="#onBtnClick1"
+                                prefHeight="194.0" prefWidth="235.0">
+                            <font>
+                                <Font size="49.0"/>
+                            </font>
+                        </Button>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="1"
+                      GridPane.rowIndex="1">
+                    <children>
+                        <Button fx:id="btn2" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onAction="#onBtnClick2"
+                                prefHeight="193.0" prefWidth="235.0"/>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="2"
+                      GridPane.rowIndex="1">
+                    <children>
+                        <Button fx:id="btn3" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onAction="#onBtnClick3"
+                                prefHeight="193.0" prefWidth="235.0"/>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="3"
+                      GridPane.rowIndex="1">
+                    <children>
+                        <Label layoutX="32.0" layoutY="64.0" text="Player X:">
+                            <font>
+                                <Font size="46.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Pane fx:id="jlblPlayerX" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;"
+                      GridPane.columnIndex="4" GridPane.rowIndex="1">
+                    <children>
+                        <Text fx:id="playerXWinstreak" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                              textAlignment="CENTER" wrappingWidth="235.9830722808838">
+                            <font>
+                                <Font size="46.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.rowIndex="2">
+                    <children>
+                        <Button fx:id="btn4" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onAction="#onBtnClick4"
+                                prefHeight="192.0" prefWidth="235.0">
+                            <font>
+                                <Font size="55.0"/>
+                            </font>
+                        </Button>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="1"
+                      GridPane.rowIndex="2">
+                    <children>
+                        <Button fx:id="btn5" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onAction="#onBtnClick5"
+                                prefHeight="192.0" prefWidth="235.0"/>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="2"
+                      GridPane.rowIndex="2">
+                    <children>
+                        <Button fx:id="btn6" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onAction="#onBtnClick6"
+                                prefHeight="192.0" prefWidth="235.0"/>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="3"
+                      GridPane.rowIndex="2">
+                    <children>
+                        <Label layoutX="29.0" layoutY="64.0" text="Player O:" textAlignment="CENTER">
+                            <font>
+                                <Font size="46.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Pane fx:id="jlblPlayerO" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;"
+                      GridPane.columnIndex="4" GridPane.rowIndex="2">
+                    <children>
+                        <Text fx:id="playerOWinstreak" layoutX="2.0" layoutY="116.0" strokeType="OUTSIDE"
+                              strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="232.9830722808838">
+                            <font>
+                                <Font size="46.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.rowIndex="3">
+                    <children>
+                        <Button fx:id="btn7" layoutY="1.0" minHeight="-Infinity" mnemonicParsing="false"
+                                onAction="#onBtnClick7" prefHeight="192.0" prefWidth="236.0"/>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="1"
+                      GridPane.rowIndex="3">
+                    <children>
+                        <Button fx:id="btn8" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onAction="#onBtnClick8"
+                                prefHeight="191.5" prefWidth="235.0"/>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="2"
+                      GridPane.rowIndex="3">
+                    <children>
+                        <Button fx:id="btn9" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onAction="#onBtnClick9"
+                                prefHeight="192.0" prefWidth="235.0"/>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="3"
+                      GridPane.rowIndex="3">
+                    <children>
+                        <Button fx:id="jbtnReset" layoutX="1.0" layoutY="1.0" mnemonicParsing="false"
+                                onAction="#onResetClick" prefHeight="192.0" prefWidth="235.0" text="Reset"
+                                textAlignment="CENTER">
+                            <font>
+                                <Font size="44.0"/>
+                            </font>
+                            <effect>
+                                <Glow/>
+                            </effect>
+                        </Button>
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="4"
+                      GridPane.rowIndex="3">
+                    <children>
+                        <Button fx:id="jbtnExit" layoutX="1.0" layoutY="1.0" mnemonicParsing="false"
+                                onAction="#onExitClick" prefHeight="192.0" prefWidth="234.0" text="EXIT">
+                            <font>
+                                <Font size="44.0"/>
+                            </font>
+                        </Button>
+                    </children>
+                </Pane>
+            </children>
+        </GridPane>
+    </center>
+    <top>
+        <Label prefHeight="66.0" prefWidth="428.0" text="Kryžiukai Nuliukai" BorderPane.alignment="CENTER">
+            <font>
+                <Font size="45.0"/>
+            </font>
+        </Label>
+    </top>
+</BorderPane>
